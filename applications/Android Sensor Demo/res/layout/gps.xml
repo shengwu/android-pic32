@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For best results, enable GPS by going to Settings -&gt; Location &amp; Security. Enable Wi-Fi for addresses."></TextView>
+    
+    <ToggleButton
+        android:id="@+id/gpsGetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" />
+    
+    <Button
+        android:layout_marginLeft="-3dip"
+    	android:layout_marginBottom="-3dip"
+        android:id="@+id/gpsSendLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send coordinates to PIC32" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/gpsStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idle" >
+        </TextView>
+    </LinearLayout>
+    
+    <!-- filler -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Location"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/gpsLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude: " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/gpsLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: " >
+    </TextView>
+
+    <TextView
+        android:id="@+id/gpsAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" >
+    </TextView>
+    
+    <!-- filler -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Received from PIC32"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/picLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude: " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/picLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: " >
+    </TextView>
+
+    <TextView
+        android:id="@+id/picAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" >
+    </TextView>
+
+</LinearLayout>

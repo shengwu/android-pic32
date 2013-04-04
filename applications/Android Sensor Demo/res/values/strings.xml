@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Sensor Demo</string>
+    <string name="title">Choose a sensor:</string>
+    <string name="gpsLabel">GPS</string>
+    <string name="cameraLabel">Camera</string>
+    <string name="touchscreenLabel">Touchscreen</string>
+    <string name="microphoneLabel">Microphone</string>
+    <string name="guide">Press back to return to this menu.</string>
+
+    <!-- activity labels -->
+    <string name="gpsActivityLabel">GPS | Android Sensor Demo</string>
+    <string name="cameraActivityLabel">Camera | Android Sensor Demo</string>
+    <string name="touchscreenActivityLabel">Touchscreen | Android Sensor Demo</string>
+    <string name="microphoneActivityLabel">Microphone | Android Sensor Demo</string>
+    
+    <string name="gps_unavailable">The GPS provider isn\'t available</string>
+    <string name="network_unavailable">The network provider isn\'t available</string>
+
+</resources>

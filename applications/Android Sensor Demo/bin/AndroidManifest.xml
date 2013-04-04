@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="lims.androidsensor.app"
+      android:versionCode="1"
+      android:versionName="1.0">
+	<uses-sdk android:targetSdkVersion="10" android:minSdkVersion="5" />
+	
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Enable location services for GPS -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- Enable camera permissions -->
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- Enable microphone functionality -->
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<!-- Touch functionality doesn't require permissions -->
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name"
+        android:name="lims.androidsensor.app.ServerHolder">
+        <activity android:name=".AndroidSensor"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".GPSDemo"
+            		android:label="@string/gpsActivityLabel"></activity>
+        <activity android:name=".CameraDemo"
+            		android:label="@string/cameraActivityLabel"></activity>
+        <activity android:name=".TouchscreenDemo"
+            		android:label="@string/touchscreenActivityLabel"></activity>
+        <activity android:name=".MicrophoneDemo"
+            		android:label="@string/microphoneActivityLabel"></activity>
+   	
+   	</application>
+    
+</manifest>

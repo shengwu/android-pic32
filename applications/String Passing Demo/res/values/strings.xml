@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World</string>
+    <string name="app_name">String Passing Demo</string>
+	<string name="title">Android-PIC32 String Passing</string>
+    <string name="waitingMessage">(waiting for message)\n</string>
+    <string name="receivedLabel">Received from PIC:</string>
+    <string name="clearLabel">Clear received messages</string>
+    <string name="sendLabel">Send to PIC</string>
+    <string name="statusLabel">Status:</string>
+    <string name="defaultStatus">disconnected</string>
+</resources>
